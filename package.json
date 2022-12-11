@@ -1,6 +1,27 @@
 {
-  "name": "FSWD-Part-3",
+  "name": "fswd-part-3",
   "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evelynbirnzain/FSWD-Part-3.git"
+  },
+  "author": "Evelyn Birnzain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evelynbirnzain/FSWD-Part-3/issues"
+  },
+  "homepage": "https://github.com/evelynbirnzain/FSWD-Part-3#readme",
+  "description": "",
   "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
   }
 }
