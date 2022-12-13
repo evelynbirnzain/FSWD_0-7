@@ -28,7 +28,8 @@ const App = () => {
         setNotification(message)
         setTimeout(() => {
             setNotification(null)
-            setIsError(false)}, 5000)
+            setIsError(false)
+        }, 5000)
     }
 
     const clearForm = () => {
@@ -39,8 +40,7 @@ const App = () => {
     const updateNumber = () => {
         if (window.confirm(`${newName} is already added to the phonebook, replace the old number with a new one?`)) {
             const person = persons.find(p => p.name === newName)
-            person.number = newNumber
-            personService.update(person.id, person)
+            personService.update(person.id, {name: person.name, number: newNumber})
                 .then(updated => {
                     setPersons(persons.map(p => p.id === person.id ? updated : p))
                     displayNotification(`${person.name}'s number was updated`)
@@ -51,7 +51,7 @@ const App = () => {
                         displayNotification(`${person.name} has already been removed from the server`, true)
                         setPersons(persons.filter(p => p.id !== person.id))
                     } else {
-                        displayNotification(`Something went wrong: ${error.response.statusText}`, true)
+                        displayNotification(error.response.data.error, true)
                     }
                 })
         }
@@ -62,11 +62,16 @@ const App = () => {
             name: newName,
             number: newNumber
         }
-        personService.create(person).then(response => {
-            setPersons(persons.concat(response))
-            displayNotification(`${person.name} was added`)
-            clearForm()
-        })
+        personService.create(person)
+            .then(response => {
+                setPersons(persons.concat(response))
+                displayNotification(`${person.name} was added`)
+                clearForm()
+            })
+            .catch(error => {
+                displayNotification(error.response.data.error, true)
+            })
+
     }
 
     const handleAddName = (event) => {
@@ -87,7 +92,7 @@ const App = () => {
                     setPersons(persons.filter(p => p.id !== person.id))
                     displayNotification(`${person.name} was deleted`)
                 })
-                .catch(error =>{
+                .catch(error => {
                     if (error.response.status === 404) {
                         displayNotification(`${person.name} has already been removed from the server`, true)
                         setPersons(persons.filter(p => p.id !== person.id))
@@ -99,7 +104,7 @@ const App = () => {
     return (
         <div>
             <h2>Phonebook</h2>
-            <Notification message={notification} isError={isError} />
+            <Notification message={notification} isError={isError}/>
             <Filter searchString={searchString} setSearchString={setSearchString}></Filter>
 
             <h3>Add a new</h3>
