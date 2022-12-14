@@ -1,4 +1,4 @@
-const listHelper = require('../utils/list_helper')
+const Blog = require('../models/blog')
 
 const listWithOneBlog = [
   {
@@ -11,7 +11,7 @@ const listWithOneBlog = [
   }
 ]
 
-const blogs = [
+const initialBlogs = [
   {
     _id: "5a422a851b54a676234d17f7",
     title: "React patterns",
@@ -62,43 +62,19 @@ const blogs = [
   }
 ]
 
-test('dummy returns one', () => {
-  const blogs = []
+const nonExistingId = async () => {
+  const note = new Blog({ content: 'willremovethissoon', date: new Date() })
+  await note.save()
+  await note.remove()
 
-  const result = listHelper.dummy(blogs)
-  expect(result).toBe(1)
-})
+  return note._id.toString()
+}
 
-describe('total likes', () => {
-  test('when list has only one blog, equals the likes of that', () => {
-    const result = listHelper.totalLikes(listWithOneBlog)
-    expect(result).toBe(5)
-  })
+const blogsInDb = async () => {
+  const blogs = await Blog.find({})
+  return blogs.map(b => b.toJSON())
+}
 
-  test('when list has several blogs, equals the sum of likes', () => {
-    const result = listHelper.totalLikes(blogs)
-    expect(result).toBe(36)
-  })
-
-  test('when empty list, equals zero', () => {
-    const result = listHelper.totalLikes([])
-    expect(result).toBe(0)
-  })
-})
-
-describe('favorite blog', () => {
-  test('when list has only one blog, equals that', () => {
-    const result = listHelper.favoriteBlog(listWithOneBlog)
-    expect(result).toEqual(listWithOneBlog[0])
-  })
-
-  test('when list has several blogs, equals the blog with largest number of likes', () => {
-    const result = listHelper.favoriteBlog(blogs)
-    expect(result).toEqual(blogs[2])
-  })
-
-  test('when empty list, is null', () => {
-    const result = listHelper.favoriteBlog([])
-    expect(result).toBe(null)
-  })
-})
+module.exports = {
+  initialBlogs, listWithOneBlog, nonExistingId, blogsInDb
+}
