@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fbfd3500-141d-4f91-93c1-981e33e7fc53" name="Changes" comment="Part 4: setup - 4.1">
-      <change afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/blogs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/blog.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/logger.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/middleware.js" afterDir="false" />
+    <list default="true" id="fbfd3500-141d-4f91-93c1-981e33e7fc53" name="Changes" comment="Part 4: 4.2">
+      <change afterPath="$PROJECT_DIR$/tests/blog.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/list_helper.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,16 +40,45 @@
     "WebServerToolWindowFactoryState": "false",
     "javascript.nodejs.core.library.configured.version": "18.1.0",
     "javascript.nodejs.core.library.typings.version": "18.11.15",
+    "nodejs.jest.jest_package": "C:/Users/evely/IdeaProjects/FSWD-4/node_modules/jest",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Jest.total likes">
     <configuration name="rest-api_1 | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api_1.http" requestIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="dummy returns one" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/tests/blog.test.js" />
+      <test-names>
+        <test-name value="dummy returns one" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="total likes" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/tests/blog.test.js" />
+      <test-names>
+        <test-name value="total likes" />
+      </test-names>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.total likes" />
+        <item itemvalue="Jest.dummy returns one" />
         <item itemvalue="HTTP Request.rest-api_1 | #1" />
       </list>
     </recent_temporary>
@@ -65,7 +91,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671030060192</updated>
-      <workItem from="1671030062734" duration="2737000" />
+      <workItem from="1671030062734" duration="4913000" />
     </task>
     <task id="LOCAL-00001" summary="Part 4: setup - 4.1">
       <created>1671045456415</created>
@@ -74,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671045456415</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Part 4: 4.2">
+      <created>1671046902057</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1671046902057</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -93,6 +126,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Part 4: setup - 4.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Part 4: setup - 4.1" />
+    <MESSAGE value="Part 4: 4.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Part 4: 4.2" />
   </component>
 </project>
