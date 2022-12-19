@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fbfd3500-141d-4f91-93c1-981e33e7fc53" name="Changes" comment="Part 4: 4.8-4.12">
+    <list default="true" id="fbfd3500-141d-4f91-93c1-981e33e7fc53" name="Changes" comment="Part 4: 4.12-4.14">
+      <change afterPath="$PROJECT_DIR$/controllers/users.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/user_api.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/blogs.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/blogs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/blog_api.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/blog_api.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/blog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_helper.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_helper.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,8 +51,14 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Jest.blog_api.test.js">
-    <configuration name="rest-api_2 | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api_2.http" requestIdentifier="#1" runType="Run single request">
+  <component name="RunManager" selected="HTTP Request.rest-api_4 | #2">
+    <configuration name="rest-api_4 | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api_4.http" requestIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="rest-api_4 | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api_4.http" index="2" requestIdentifier="#2" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="rest-api_4 | ##" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api_4.http" index="2" requestIdentifier="##" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="blog_api.test.js" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
@@ -59,54 +71,23 @@
       <test-file value="$PROJECT_DIR$/tests/blog_api.test.js" />
       <method v="2" />
     </configuration>
-    <configuration name="test deleting a blog" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="user_api.test.js" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
-      <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/tests/blog_api.test.js" />
-      <test-names>
-        <test-name value="test deleting a blog" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="test deleting a blog.returns status code 404 if id is not in DB" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/tests/blog_api.test.js" />
-      <test-names>
-        <test-name value="test deleting a blog" />
-        <test-name value="returns status code 404 if id is not in DB" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="test deleting a blog.succeeds with status code 204 if id is not in DB" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/tests/blog_api.test.js" />
-      <test-names>
-        <test-name value="test deleting a blog" />
-        <test-name value="succeeds with status code 204 if id is not in DB" />
-      </test-names>
+      <scope-kind value="TEST_FILE" />
+      <test-file value="$PROJECT_DIR$/tests/user_api.test.js" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.rest-api_4 | #2" />
+        <item itemvalue="HTTP Request.rest-api_4 | #1" />
+        <item itemvalue="HTTP Request.rest-api_4 | ##" />
+        <item itemvalue="Jest.user_api.test.js" />
         <item itemvalue="Jest.blog_api.test.js" />
-        <item itemvalue="Jest.test deleting a blog" />
-        <item itemvalue="Jest.test deleting a blog.returns status code 404 if id is not in DB" />
-        <item itemvalue="HTTP Request.rest-api_2 | #1" />
-        <item itemvalue="Jest.test deleting a blog.succeeds with status code 204 if id is not in DB" />
       </list>
     </recent_temporary>
   </component>
@@ -119,7 +100,7 @@
       <option name="presentableId" value="Default" />
       <updated>1671030060192</updated>
       <workItem from="1671030062734" duration="12320000" />
-      <workItem from="1671471733970" duration="1927000" />
+      <workItem from="1671471733970" duration="5505000" />
     </task>
     <task id="LOCAL-00001" summary="Part 4: setup - 4.1">
       <created>1671045456415</created>
@@ -149,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671053703316</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Part 4: 4.12-4.14">
+      <created>1671473716919</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1671473716919</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,6 +159,7 @@
     <MESSAGE value="Part 4: 4.2" />
     <MESSAGE value="Part 4: 4.3-4.5" />
     <MESSAGE value="Part 4: 4.8-4.12" />
-    <option name="LAST_COMMIT_MESSAGE" value="Part 4: 4.8-4.12" />
+    <MESSAGE value="Part 4: 4.12-4.14" />
+    <option name="LAST_COMMIT_MESSAGE" value="Part 4: 4.12-4.14" />
   </component>
 </project>
