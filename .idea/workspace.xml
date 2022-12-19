@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fbfd3500-141d-4f91-93c1-981e33e7fc53" name="Changes" comment="Part 4: 4.18 - 4.20">
+    <list default="true" id="fbfd3500-141d-4f91-93c1-981e33e7fc53" name="Changes" comment="Part 4: 4.21 - 4.22">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/blogs.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/blogs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/blog_api.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/blog_api.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_helper.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_helper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/user_api.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/user_api.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/middleware.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/list_helper.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/list_helper.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/list_helper.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/list_helper.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,43 +46,79 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Jest.user_api.test.js">
-    <configuration name="rest-api_4 | #5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api_4.http" index="5" requestIdentifier="#5" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="rest-api_4 | #6" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api_4.http" index="6" requestIdentifier="#6" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="rest-api_4 | ##" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api_4.http" index="2" requestIdentifier="##" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="blog_api.test.js" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Jest.list_helper.test.js">
+    <configuration name="list_helper.test.js" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST_FILE" />
-      <test-file value="$PROJECT_DIR$/tests/blog_api.test.js" />
+      <test-file value="$PROJECT_DIR$/tests/list_helper.test.js" />
       <method v="2" />
     </configuration>
-    <configuration name="user_api.test.js" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="most blogs" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
-      <scope-kind value="TEST_FILE" />
-      <test-file value="$PROJECT_DIR$/tests/user_api.test.js" />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/tests/list_helper.test.js" />
+      <test-names>
+        <test-name value="most blogs" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="most blogs.when empty list, is null" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/tests/list_helper.test.js" />
+      <test-names>
+        <test-name value="most blogs" />
+        <test-name value="when empty list, is null" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="most blogs.when there are several blogs, return the author with most blogs" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/tests/list_helper.test.js" />
+      <test-names>
+        <test-name value="most blogs" />
+        <test-name value="when there are several blogs, return the author with most blogs" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="most likes.when there are several blogs, return the author with most likes" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/tests/list_helper.test.js" />
+      <test-names>
+        <test-name value="most likes" />
+        <test-name value="when there are several blogs, return the author with most likes" />
+      </test-names>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.user_api.test.js" />
-        <item itemvalue="Jest.blog_api.test.js" />
-        <item itemvalue="HTTP Request.rest-api_4 | #6" />
-        <item itemvalue="HTTP Request.rest-api_4 | #5" />
-        <item itemvalue="HTTP Request.rest-api_4 | ##" />
+        <item itemvalue="Jest.list_helper.test.js" />
+        <item itemvalue="Jest.most likes.when there are several blogs, return the author with most likes" />
+        <item itemvalue="Jest.most blogs" />
+        <item itemvalue="Jest.most blogs.when empty list, is null" />
+        <item itemvalue="Jest.most blogs.when there are several blogs, return the author with most blogs" />
       </list>
     </recent_temporary>
   </component>
@@ -148,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671479345665</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Part 4: 4.21 - 4.22">
+      <created>1671482991287</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1671482991287</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,6 +214,7 @@
     <MESSAGE value="Part 4: 4.12-4.14" />
     <MESSAGE value="Part 4: 4.15-4.17" />
     <MESSAGE value="Part 4: 4.18 - 4.20" />
-    <option name="LAST_COMMIT_MESSAGE" value="Part 4: 4.18 - 4.20" />
+    <MESSAGE value="Part 4: 4.21 - 4.22" />
+    <option name="LAST_COMMIT_MESSAGE" value="Part 4: 4.21 - 4.22" />
   </component>
 </project>

@@ -42,3 +42,27 @@ describe('favorite blog', () => {
     expect(result).toBe(undefined)
   })
 })
+
+describe('most blogs', () => {
+  test('when there are several blogs, return the author with most blogs', () => {
+    const result = listHelper.mostBlogs(testHelper.initialBlogs)
+    expect(result).toEqual({author: "Robert C. Martin", blogs: 3})
+  })
+
+  test('when empty list, is null', () => {
+    const result = listHelper.mostBlogs([])
+    expect(result).toBe(undefined)
+  })
+})
+
+describe('most likes', () => {
+  test('when there are several blogs, return the author with most likes', () => {
+    const result = listHelper.mostLikes(testHelper.initialBlogs)
+    expect(result).toEqual({author: "Edsger W. Dijkstra", likes: 17})
+  })
+
+  test('when empty list, is null', () => {
+    const result = listHelper.mostBlogs([])
+    expect(result).toBe(undefined)
+  })
+})
