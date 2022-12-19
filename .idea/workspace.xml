@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fbfd3500-141d-4f91-93c1-981e33e7fc53" name="Changes" comment="Part 4: 4.3-4.5">
-      <change afterPath="$PROJECT_DIR$/tests/blog_api.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_helper.js" afterDir="false" />
+    <list default="true" id="fbfd3500-141d-4f91-93c1-981e33e7fc53" name="Changes" comment="Part 4: 4.8-4.12">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/blogs.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/blogs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/blog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/blog.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/list_helper.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/list_helper.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/list_helper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/logger.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/logger.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/blog_api.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/blog_api.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_helper.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_helper.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,62 +31,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "javascript.nodejs.core.library.configured.version": "18.1.0",
-    "javascript.nodejs.core.library.typings.version": "18.11.15",
-    "nodejs.jest.jest_package": "C:/Users/evely/IdeaProjects/FSWD-4/node_modules/jest",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2022.1\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;18.1.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;18.11.15&quot;,
+    &quot;nodejs.jest.jest_package&quot;: &quot;C:/Users/evely/IdeaProjects/FSWD-4/node_modules/jest&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2022.1\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Jest.favorite blog.when list has only one blog, equals that">
-    <configuration name="a valid blog can be added" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+}</component>
+  <component name="RunManager" selected="Jest.blog_api.test.js">
+    <configuration name="rest-api_2 | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api_2.http" requestIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="blog_api.test.js" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
-      <scope-kind value="TEST" />
+      <scope-kind value="TEST_FILE" />
       <test-file value="$PROJECT_DIR$/tests/blog_api.test.js" />
-      <test-names>
-        <test-name value="a valid blog can be added" />
-      </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="favorite blog" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="test deleting a blog" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/tests/list_helper.test.js" />
+      <test-file value="$PROJECT_DIR$/tests/blog_api.test.js" />
       <test-names>
-        <test-name value="favorite blog" />
+        <test-name value="test deleting a blog" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="favorite blog.when list has only one blog, equals that" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/tests/list_helper.test.js" />
-      <test-names>
-        <test-name value="favorite blog" />
-        <test-name value="when list has only one blog, equals that" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="if &quot;likes&quot; property is missing, it defaults to 0" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="test deleting a blog.returns status code 404 if id is not in DB" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
@@ -103,11 +81,12 @@
       <scope-kind value="TEST" />
       <test-file value="$PROJECT_DIR$/tests/blog_api.test.js" />
       <test-names>
-        <test-name value="if &quot;likes&quot; property is missing, it defaults to 0" />
+        <test-name value="test deleting a blog" />
+        <test-name value="returns status code 404 if id is not in DB" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="if &quot;title&quot; or &quot;url&quot; are missing, respond with 400" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="test deleting a blog.succeeds with status code 204 if id is not in DB" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
@@ -116,17 +95,18 @@
       <scope-kind value="TEST" />
       <test-file value="$PROJECT_DIR$/tests/blog_api.test.js" />
       <test-names>
-        <test-name value="if &quot;title&quot; or &quot;url&quot; are missing, respond with 400" />
+        <test-name value="test deleting a blog" />
+        <test-name value="succeeds with status code 204 if id is not in DB" />
       </test-names>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.favorite blog.when list has only one blog, equals that" />
-        <item itemvalue="Jest.favorite blog" />
-        <item itemvalue="Jest.if &quot;title&quot; or &quot;url&quot; are missing, respond with 400" />
-        <item itemvalue="Jest.if &quot;likes&quot; property is missing, it defaults to 0" />
-        <item itemvalue="Jest.a valid blog can be added" />
+        <item itemvalue="Jest.blog_api.test.js" />
+        <item itemvalue="Jest.test deleting a blog" />
+        <item itemvalue="Jest.test deleting a blog.returns status code 404 if id is not in DB" />
+        <item itemvalue="HTTP Request.rest-api_2 | #1" />
+        <item itemvalue="Jest.test deleting a blog.succeeds with status code 204 if id is not in DB" />
       </list>
     </recent_temporary>
   </component>
@@ -138,7 +118,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671030060192</updated>
-      <workItem from="1671030062734" duration="9540000" />
+      <workItem from="1671030062734" duration="12320000" />
+      <workItem from="1671471733970" duration="1927000" />
     </task>
     <task id="LOCAL-00001" summary="Part 4: setup - 4.1">
       <created>1671045456415</created>
@@ -161,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671048813430</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Part 4: 4.8-4.12">
+      <created>1671053703316</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1671053703316</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,6 +170,7 @@
     <MESSAGE value="Part 4: setup - 4.1" />
     <MESSAGE value="Part 4: 4.2" />
     <MESSAGE value="Part 4: 4.3-4.5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Part 4: 4.3-4.5" />
+    <MESSAGE value="Part 4: 4.8-4.12" />
+    <option name="LAST_COMMIT_MESSAGE" value="Part 4: 4.8-4.12" />
   </component>
 </project>
