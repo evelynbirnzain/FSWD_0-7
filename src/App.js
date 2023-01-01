@@ -1,11 +1,11 @@
-import {useState, useEffect, useRef} from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Blog from './components/Blog'
 import blogService from './services/blogs'
 import loginService from './services/login'
-import Notification from "./components/Notification";
-import LoginForm from "./components/LoginForm";
-import Togglable from "./components/Togglable";
-import BlogForm from "./components/BlogForm";
+import Notification from './components/Notification'
+import LoginForm from './components/LoginForm'
+import Togglable from './components/Togglable'
+import BlogForm from './components/BlogForm'
 
 const App = () => {
   const [blogs, setBlogs] = useState([])
@@ -35,7 +35,7 @@ const App = () => {
   const handleLogin = async (event) => {
     event.preventDefault()
     try {
-      const user = await loginService.login({username, password,})
+      const user = await loginService.login({ username, password, })
       window.localStorage.setItem('user', JSON.stringify(user))
       blogService.setToken(user.token)
       setUser(user)
@@ -59,8 +59,8 @@ const App = () => {
     <LoginForm
       username={username}
       password={password}
-      handleUsernameChange={({target}) => setUsername(target.value)}
-      handlePasswordChange={({target}) => setPassword(target.value)}
+      handleUsernameChange={({ target }) => setUsername(target.value)}
+      handlePasswordChange={({ target }) => setPassword(target.value)}
       handleSubmit={handleLogin}
       message={message}
     />
