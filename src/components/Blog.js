@@ -18,7 +18,7 @@ const Blog = ({ blog, handleLike, removeBlog, currentUser }) => {
   }
 
   const incrementLikes = () => {
-    const updatedBlog = { ...blog, likes: blog.likes + 1 }
+    const updatedBlog = { ...blog, likes: blog.likes + 1, user: blog.user.id }
     handleLike(updatedBlog)
   }
 
@@ -31,7 +31,7 @@ const Blog = ({ blog, handleLike, removeBlog, currentUser }) => {
   console.log(blog.user, currentUser)
 
   return (
-    <div style={blogStyle}>
+    <div style={blogStyle} className={'blog'}>
       <div>
         {blog.title} {blog.author}
         <button style={hideWhenVisible} onClick={toggleVisibility}>view</button>
@@ -40,10 +40,13 @@ const Blog = ({ blog, handleLike, removeBlog, currentUser }) => {
       <div style={showWhenVisible} className={'togglableContent'}>
         <div>{blog.url}</div>
         <div>likes {blog.likes}
-          <button onClick={incrementLikes}>like</button>
+          <button
+            id={'like-button'}
+            onClick={incrementLikes}>like
+          </button>
         </div>
-        <div>{blog.user && blog.user.username}</div>
-        {blog.user && blog.user.username === currentUser.name && <button onClick={remove}>remove</button>}
+        <div>{blog.user && blog.user.name}</div>
+        {blog.user && blog.user.username === currentUser.username && <button onClick={remove}>remove</button>}
       </div>
     </div>
   )
