@@ -37,13 +37,13 @@ const Blog = ({ blog, handleLike, removeBlog, currentUser }) => {
         <button style={hideWhenVisible} onClick={toggleVisibility}>view</button>
         <button style={showWhenVisible} onClick={toggleVisibility}>hide</button>
       </div>
-      <div style={showWhenVisible}>
+      <div style={showWhenVisible} className={'togglableContent'}>
         <div>{blog.url}</div>
         <div>likes {blog.likes}
           <button onClick={incrementLikes}>like</button>
         </div>
         <div>{blog.user && blog.user.username}</div>
-        {blog.user && blog.user.name === currentUser.name && <button onClick={remove}>remove</button>}
+        {blog.user && blog.user.username === currentUser.name && <button onClick={remove}>remove</button>}
       </div>
     </div>
   )
