@@ -37,14 +37,17 @@ const reducer = (state = initialState, action) => {
   console.log('state now: ', state)
   console.log('action', action)
 
-  const compareFn = (a,b) => b.votes - a.votes
+  const compareFn = (a, b) => b.votes - a.votes
 
   switch (action.type) {
     case 'VOTE':
       const id = action.data.id
       const anecdote = state.find(a => a.id === id)
-      anecdote.votes += 1
-      return [...state].sort(compareFn)
+      const newAnecdote = {
+        ...anecdote,
+        votes: anecdote.votes + 1
+      }
+      return state.map(a => a.id === id ? newAnecdote : a).sort(compareFn)
     case 'NEW_ANECDOTE':
       return [...state, action.data.anecdote]
     default:
