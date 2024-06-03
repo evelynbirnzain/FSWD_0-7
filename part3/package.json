@@ -1,0 +1,37 @@
+{
+  "name": "fswd-part-3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:ui": "rm -rf build && cd ../Full-Stack-Web-Development/part2/phonebook && npm run build && cp -r build ../../../FSWD-Part-3",
+    "deploy": "flyctl deploy",
+    "deploy:full": "npm run build:ui && npm run deploy",
+    "logs:prod": "flyctl logs",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evelynbirnzain/FSWD-Part-3.git"
+  },
+  "author": "Evelyn Birnzain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evelynbirnzain/FSWD-Part-3/issues"
+  },
+  "homepage": "https://github.com/evelynbirnzain/FSWD-Part-3#readme",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.8.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.29.0",
+    "nodemon": "^2.0.20"
+  }
+}
